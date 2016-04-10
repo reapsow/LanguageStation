@@ -5,8 +5,12 @@ Language Station for Japanese,Korean, English
 LanguageStation provides below functionalities.
 
   * Translate by Scraping
+    - ui4j to scrape from web
   * Extract words from sentence
+    - mecab for japanese
+    - stanford nlp for english
   * Furigana 
+    - mecab
 
 [Watch Overview Video](https://youtu.be/48fq8Y_EJaU)
 
