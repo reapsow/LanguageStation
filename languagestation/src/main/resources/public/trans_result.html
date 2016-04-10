@@ -1,0 +1,29 @@
+<md-dialog aria-label="Mango (Fruit)" ng-cloak>
+<form>
+	<md-toolbar>
+	<div class="md-toolbar-tools">
+		<h2>Translate Result</h2>
+		<span flex></span>
+		<md-button class="md-icon-button" ng-click="cancel()"> <md-icon
+			md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+		</md-button>
+	</div>
+	</md-toolbar>
+	<md-dialog-content>
+	<div class="md-dialog-content">
+		<!-- {{scrapes}} -->
+		<md-list> <md-list-item class="md-3-line"
+			ng-repeat="item in resultData.words"> <md-card> <md-card-title>
+		<md-card-title-text> <span class="md-headline">{{
+			item.eng }}</span> </md-card-title-text> </md-card-title> <md-card-content>
+		<p>{{ item.jap }}</p>
+		<p>{{ item.kor }}</p>
+		</md-card-content> </md-card> <md-divider></md-divider> </md-list-item> </md-list>
+
+	</div>
+
+	</md-dialog-content>
+	<md-dialog-actions layout="row"> <span flex></span>
+	<md-button ng-click="answer('not useful')"> OK </md-button> </md-dialog-actions>
+</form>
+</md-dialog>
